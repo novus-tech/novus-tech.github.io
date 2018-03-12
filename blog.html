@@ -86,33 +86,59 @@
           </div>
         </div>
       </div>
-<!--       <div class="container">
+
+      <div class="container">
         <div class="mt-3 mx-auto">
-          <h3 class="">Weekly Update</h3>
-            <p class="date"><i>January 20, 2018</i></p>
-            <p class="text-muted mb-0">The team has completed the second design iteration phase of robot and completed all purchase orders as necessaandry. Parts are expected to arrive by the end of next week. <br>
-              <b> Mechanical </b> <br>
-              - Metal framework is completed. <br>
-              - Motors and gearboxes have been assembled. <br>
-              <b> Electrical </b> <br>
-              - Custom PCB design is completed and ordered. <br>
-              - All Digi-Key parts ordered. <br>
-              <b> Embedded Hardware </b> <br>
-              - Open loop control of motors completed. <br>
-              - UART communication between stm32 and linux core completed. <br>
-              <b> Autonomous Software</b> <br>
-              - Communication with Realsense Camera established. <br>
-              <b>Warehouse Management Software </b> <br>
-              - Interactive Server active. <br>
+          <h3 class="">Lets talk autonomy.</h3>
+            <p class="date"><i>March 3, 2018</i></p>
+            <p class="text-muted mb-0"> <br>
+              Starting with the basics, we wanted to ensure that our robot will not, even accidentally, bump into anything. Although our main CPU will be calculating and providing speed to our real time CPU, our real time stm32 also has integrated Time of Flight sensors. These sensors sense the surrounding direction of the robot and apply emergency braking to the motors such that our robot always stops within a safe distance.<br>
+              <video controls="controls" name="proximity_1" src="video/proximity_sensor_testing.mp4" width="300" height="600" allowfullscreen="true" autostart="0"></video>
+              <video controls="controls" name="proximity_2" src="video/proximity_sensor_testing2.mp4" width="300" height="600" allowfullscreen="true" autostart="0"></video>
             </p>
-        </div> -->
+        </div>
+      </div> 
+
+      <div class="container">
+        <div class="mt-3 mx-auto">
+          <h3 class="">Testing the Linear Actuator!</h3>
+            <p class="date"><i>February 28, 2018</i></p>
+            <p class="text-muted mb-0"> <br>
+              Being able to lift a pallet is a huge leap forward for us. Using components from an existing system, there was some uncertainty about if our robot will be able to balance the required forces to push the linear actuator to lift the forks. Notice the wheels and forks extending in the back as the linear actuator pushes up. Stay tuned for our weight capacity testing soon.<br>
+              <video controls="controls" name="lin_act_testing"  src="video/linear_actuator_testing.mp4" width="688" height="300" allowfullscreen="true" autostart="0"></video>
+            </p>
+        </div>
+      </div>  
+
+      <div class="container">
+        <div class="mt-3 mx-auto">
+          <h3 class="">Testing the Drive!</h3>
+            <p class="date"><i>February 27, 2018</i></p>
+            <p class="text-muted mb-0"> <br>
+              With new found power, we were finally able to test our entire drive train out, fully attached with pallet jack forks. You can hear us screaming in the background !<br>
+              <video controls="controls" name="first_drive" src="video/first_time_testing_drive.MOV" width="800" height="500" allowfullscreen="true" autostart="0"></video>
+            </p>
+        </div>
+      </div>     
+
+      <div class="container">
+        <div class="mt-3 mx-auto">
+          <h3 class="">Batteries are Fundemental.</h3>
+            <p class="date"><i>February 22, 2018</i></p>
+            <p class="text-muted mb-0"> <br>
+              Our hardware has been severely bottlenecked by a larger problem we did not expect. One of our sponsors fell through and we were unable to successfully obtain our batteries in the last two months. We decided there was no point in waiting any longer and made the investment oursevles.. because what will our robot do without a power source? We also have attached a power distribution panel that will allow us to easily manage high current motors on different channels, with individual fuses, such that nothing goes beyond its appropriate limit. There is also a 120 A limit switch that ensures the battery never exceeds an appropriate power surge.<br>
+              <img src="img/power_management.jpg" width="600" height="400" alt="">
+            </p>
+        </div>
+      </div>          
+
       <div class="container">
         <div class="mt-3 mx-auto">
           <h3 class="">Object Detection - Realsense Camera</h3>
             <p class="date"><i>February 13, 2018</i></p>
             <p class="text-muted mb-0"> <br>
               A key component to our robot being able to navigate the warehouse automatically is through the use of its eyes - the Realsense Camera. This camera provides rgb camera data along with depth data. This allows the robot to look for objects in its field of vision, and dynamically modifty the path. <br>
-              <embed src="video/realsense_demo_2.mp4" width="688" height="300" allowfullscreen="true">
+              <video controls="controls" name="realsense" src="video/realsense_demo_2.mp4" width="688" height="300" allowfullscreen="true" autostart="0"></video>
             </p>
         </div>
       </div>
@@ -122,7 +148,7 @@
             <p class="date"><i>January 31, 2018</i></p>
             <p class="text-muted mb-0"> <br>
               The first step toward our drive train is making sure that we steer the system. This means making sure we can accurately turn the motor to the exact position, acting like a servo. Completing this allows us to appropriately turn without having to change driving speeds.<br>
-              <embed src="video/recorded-1517167637.mp4?file=video.mp4" width="360" height="640" allowfullscreen="true">
+              <video controls="controls" name="motor_control" src="video/recorded-1517167637.mp4?file=video.mp4" width="360" height="640" allowfullscreen="true" autostart="0"></video>
             </p>
         </div>
       </div>
